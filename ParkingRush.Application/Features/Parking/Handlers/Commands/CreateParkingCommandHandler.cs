@@ -1,7 +1,6 @@
 using AutoMapper;
 using MediatR;
 using ParkingRush.Application.DTO.Parking.Validators;
-using ParkingRush.Application.Exceptions;
 using ParkingRush.Application.Features.Parking.Requests.Commands;
 using ParkingRush.Application.Persistence.Contracts;
 using ParkingRush.Application.Responses;
@@ -31,6 +30,7 @@ public class CreateParkingCommandHandler : IRequestHandler<CreateParkingCommand,
             response.Message = "Creation Failed";
             response.Errors = validationResult.Errors.Select(e => e.ErrorMessage).ToList();
         }
+
         var parking = _mapper.Map<Domain.Parking>(request.ParkingDto);
         parking = await _parkingRepository.Add(parking);
         response.Success = true;
