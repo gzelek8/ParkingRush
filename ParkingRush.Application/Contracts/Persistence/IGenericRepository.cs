@@ -1,4 +1,4 @@
-namespace ParkingRush.Application.Persistence.Contracts;
+namespace ParkingRush.Application.Contracts.Persistence;
 
 public interface IGenericRepository<T> where T : class
 {
@@ -6,6 +6,5 @@ public interface IGenericRepository<T> where T : class
     Task<IReadOnlyList<T>> GetAll();
     Task<T> Add(T entity);
     Task<T> Update(T entity);
-    Task<T> Delete(T entity);
-
+    Task Delete(T entity);
 }

@@ -1,8 +1,8 @@
 using AutoMapper;
 using MediatR;
+using ParkingRush.Applicatio.Contracts.Persistence;
 using ParkingRush.Application.DTO.Parking.Validators;
 using ParkingRush.Application.Features.Parking.Requests.Commands;
-using ParkingRush.Application.Persistence.Contracts;
 using ParkingRush.Application.Responses;
 
 namespace ParkingRush.Application.Features.Parking.Handlers.Commands;

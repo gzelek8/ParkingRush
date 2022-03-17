@@ -1,9 +1,9 @@
 using AutoMapper;
 using MediatR;
+using ParkingRush.Applicatio.Contracts.Persistence;
 using ParkingRush.Application.DTO.Parking.Validators;
 using ParkingRush.Application.Exceptions;
 using ParkingRush.Application.Features.Parking.Requests.Commands;
-using ParkingRush.Application.Persistence.Contracts;
 
 namespace ParkingRush.Application.Features.Parking.Handlers.Commands;
 
@@ -35,6 +35,7 @@ public class UpdateParkingCommandHandler : IRequestHandler<UpdateParkingCommand,
         {
             await _parkingRepository.Verify(parking, request.VerifyParkingDto.IsVerified);
         }
+
         return Unit.Value;
     }
 }

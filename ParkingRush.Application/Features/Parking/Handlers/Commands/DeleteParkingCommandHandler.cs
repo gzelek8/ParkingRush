@@ -1,8 +1,8 @@
 using AutoMapper;
 using MediatR;
+using ParkingRush.Applicatio.Contracts.Persistence;
 using ParkingRush.Application.Exceptions;
 using ParkingRush.Application.Features.Parking.Requests.Commands;
-using ParkingRush.Application.Persistence.Contracts;
 
 namespace ParkingRush.Application.Features.Parking.Handlers.Commands;
 
@@ -16,6 +16,7 @@ public class DeleteParkingCommandHandler : IRequestHandler<DeleteParkingCommand>
         _parkingRepository = parkingRepository;
         _mapper = mapper;
     }
+
     public async Task<Unit> Handle(DeleteParkingCommand request, CancellationToken cancellationToken)
     {
         var parking = await _parkingRepository.GetById(request.Id);
@@ -23,6 +24,7 @@ public class DeleteParkingCommandHandler : IRequestHandler<DeleteParkingCommand>
         {
             throw new NotFoundException(nameof(Domain.Parking), request.Id);
         }
+
         await _parkingRepository.Delete(parking);
         return Unit.Value;
     }
