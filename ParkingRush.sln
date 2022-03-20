@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingRush.Persistence", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingRush.Api", "ParkingRush.Api\ParkingRush.Api.csproj", "{6EB469C0-A089-4965-9F44-82156964482D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingRush.UnitTests", "ParkingRush.UnitTests\ParkingRush.UnitTests.csproj", "{6980B413-876C-46B9-AE3B-802BB810CCCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingRush.IntegrationTests", "ParkingRush.IntegrationTests\ParkingRush.IntegrationTests.csproj", "{C3573651-8DA6-4FA9-9059-9E64CF4C2AC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,8 @@ Global
 		{5B4741E9-0115-4035-8446-84592BF9B8A1} = {C5186306-3149-4D37-BAB2-A6F8A78EDBC5}
 		{491B1224-AD44-4772-A574-8F81952B9AC5} = {C5186306-3149-4D37-BAB2-A6F8A78EDBC5}
 		{6EB469C0-A089-4965-9F44-82156964482D} = {52E3BBE3-FF5F-4CAF-AA6A-1C666519197C}
+		{6980B413-876C-46B9-AE3B-802BB810CCCD} = {1D78EE4C-84C3-4F7B-A15A-659ED712B70D}
+		{C3573651-8DA6-4FA9-9059-9E64CF4C2AC9} = {1D78EE4C-84C3-4F7B-A15A-659ED712B70D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{924F0539-422C-458B-8078-5783C1A33553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -59,5 +65,13 @@ Global
 		{6EB469C0-A089-4965-9F44-82156964482D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EB469C0-A089-4965-9F44-82156964482D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EB469C0-A089-4965-9F44-82156964482D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6980B413-876C-46B9-AE3B-802BB810CCCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6980B413-876C-46B9-AE3B-802BB810CCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6980B413-876C-46B9-AE3B-802BB810CCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6980B413-876C-46B9-AE3B-802BB810CCCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3573651-8DA6-4FA9-9059-9E64CF4C2AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3573651-8DA6-4FA9-9059-9E64CF4C2AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3573651-8DA6-4FA9-9059-9E64CF4C2AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3573651-8DA6-4FA9-9059-9E64CF4C2AC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

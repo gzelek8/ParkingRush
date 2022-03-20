@@ -6,7 +6,7 @@ using ParkingRush.Application.Features.Parking.Requests.Commands;
 
 namespace ParkingRush.Api.Controllers;
 
-[Route("api/test")]
+[Route("api/parkings")]
 [ApiController]
 public class ParkingController : ControllerBase
 {
