@@ -4,7 +4,7 @@ public class MongoDbConnectionParams
 {
     public MongoDbConnectionParams(string connectionString, string dataBaseName, string collectionName)
     {
-        ConnectionString = collectionName;
+        ConnectionString = connectionString;
         DataBaseName = dataBaseName;
         CollectionName = collectionName;
     }

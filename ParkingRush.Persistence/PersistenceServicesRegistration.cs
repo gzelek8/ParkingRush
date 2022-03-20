@@ -16,9 +16,9 @@ public static class PersistenceServicesRegistration
         services.AddScoped<IParkingRepository>(x =>
         {
             var cs = configuration.GetConnectionString("MongoDbConnectionStringKey");
-            var databaseName =
-                configuration.GetConnectionString("ParkingDataBaseKey"); // toDo remember to change GetValue
-            var mongoConnectionParams = new MongoDbConnectionParams(cs, databaseName, "parking");
+            // var databaseName =
+            //     configuration.GetConnectionString("MongoDbConnectionStringKey"); // toDo remember to change GetValue
+            var mongoConnectionParams = new MongoDbConnectionParams(cs, "parking", "parking");
             return new MongoParkingRepository(mongoConnectionParams);
         });
 

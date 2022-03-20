@@ -2,7 +2,7 @@ using ParkingRush.Domain.Common;
 
 namespace ParkingRush.Domain;
 
-public class Parking: BaseDomainEntity
+public class Parking : BaseDomainEntity
 {
     public string Name { get; set; }
     public Address Address { get; set; }

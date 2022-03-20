@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingRush.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingRush.Persistence", "ParkingRush.Persistence\ParkingRush.Persistence.csproj", "{491B1224-AD44-4772-A574-8F81952B9AC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingRush.Api", "ParkingRush.Api\ParkingRush.Api.csproj", "{6EB469C0-A089-4965-9F44-82156964482D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,7 @@ Global
 		{606CB1FB-3909-444B-A708-751600629CDE} = {E9E02E54-EC23-4CCA-BFAC-A53D0AA8F582}
 		{5B4741E9-0115-4035-8446-84592BF9B8A1} = {C5186306-3149-4D37-BAB2-A6F8A78EDBC5}
 		{491B1224-AD44-4772-A574-8F81952B9AC5} = {C5186306-3149-4D37-BAB2-A6F8A78EDBC5}
+		{6EB469C0-A089-4965-9F44-82156964482D} = {52E3BBE3-FF5F-4CAF-AA6A-1C666519197C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{924F0539-422C-458B-8078-5783C1A33553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -52,5 +55,9 @@ Global
 		{491B1224-AD44-4772-A574-8F81952B9AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{491B1224-AD44-4772-A574-8F81952B9AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{491B1224-AD44-4772-A574-8F81952B9AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB469C0-A089-4965-9F44-82156964482D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB469C0-A089-4965-9F44-82156964482D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB469C0-A089-4965-9F44-82156964482D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB469C0-A089-4965-9F44-82156964482D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
